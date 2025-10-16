@@ -48,7 +48,4 @@ const generateOrderingIdea = () => {
 }
 
 
-console.log(generateRestaurantIdea());
-console.log(generateCookingIdea());
-console.log(generateOrderingIdea());
 console.log(generateMeal());
