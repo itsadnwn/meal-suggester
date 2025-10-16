@@ -25,28 +25,30 @@ const generateMeal = () => {
     }
 }
 
-// Random choices logged into variables
-let cuisineChoice = getRandomElement(cuisines);
-let dishTypesChoice = getRandomElement(dishTypes);
-let proteinsChoice = getRandomElement(proteins);
-let cookingMethodsChoice = getRandomElement(cookingMethods);
-let restaurantTypesChoice = getRandomElement(restaurantTypes);
-
 // Generate cooking at home idea
 const generateCookingIdea = () => {
+    let cuisineChoice = getRandomElement(cuisines);
+    let dishTypesChoice = getRandomElement(dishTypes);
+    let proteinsChoice = getRandomElement(proteins);
+    let cookingMethodsChoice = getRandomElement(cookingMethods);
     return `Cook at home tonight! Try making ${cookingMethodsChoice} ${proteinsChoice} in a ${cuisineChoice} ${dishTypesChoice}.`
 }
 
 // Generate restaurant idea
 const generateRestaurantIdea = () => {
+    let restaurantTypesChoice = getRandomElement(restaurantTypes);
+    let cuisineChoice = getRandomElement(cuisines);
     return `Go out to eat! Check out a ${restaurantTypesChoice} for some ${cuisineChoice} food.`
 }
 
 // Generate ordering in idea
 const generateOrderingIdea = () => {
+    let cuisineChoice = getRandomElement(cuisines);
     return `Order in! Get some ${cuisineChoice} food delivered.`
 }
 
 
-
+console.log(generateRestaurantIdea());
+console.log(generateCookingIdea());
+console.log(generateOrderingIdea());
 console.log(generateMeal());
