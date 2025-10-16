@@ -17,11 +17,11 @@ const generateMeal = () => {
     const option = getRandomElement(diningOption);
 
     if (option === 'cooking at home') {
-        generateCookingIdea();
+        return generateCookingIdea();
     } else if (option === 'eating out') {
-        generateRestaurantIdea(); 
+        return generateRestaurantIdea(); 
     } else {
-        generateOrderingIdea();
+        return generateOrderingIdea();
     }
 }
 
@@ -49,7 +49,4 @@ const generateOrderingIdea = () => {
 
 
 
-console.log(getRandomElement(restaurantTypes));
-console.log(generateCookingIdea());
-console.log(generateRestaurantIdea());
-console.log(generateOrderingIdea());
+console.log(generateMeal());
